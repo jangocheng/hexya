@@ -15,7 +15,7 @@ before_install:
   - hexya generate -t ./hexya/tests/testmodule
 
 before_script:
-  - npm install less
+  - npm install less -g
   - psql -c 'create database hexya_test_models;' -U postgres
   - psql -c 'create database hexya_test_tests;' -U postgres
 
